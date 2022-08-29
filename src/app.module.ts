@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     UsersModule,
     AuthModule,
-    MongooseModule.forRoot(process.env.MONGODB_URI),
+    MongooseModule.forRoot(process.env.MONGODB_URI_INTERNAL),
   ],
   controllers: [AppController],
   providers: [AppService],
